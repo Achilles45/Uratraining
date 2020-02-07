@@ -53,16 +53,19 @@
 
 //MEDIA QUERIES
 @media only screen and (max-width: 800px) {
-  .text {
-    h1 {
-      font-size: 1.8rem !important;
+  .banner {
+    padding-top: 10rem;
+    .text {
+      h1 {
+        font-size: 1.5rem !important;
+      }
     }
-  }
-  .img__holder {
-    padding-top: 3rem;
-    .banner__img {
-      max-width: 300px !important;
-      height: auto;
+    .img__holder {
+      padding-top: 3rem;
+      .banner__img {
+        max-width: 300px !important;
+        height: auto;
+      }
     }
   }
 }
