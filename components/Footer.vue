@@ -78,7 +78,7 @@
   }
   p {
     font-size: 0.8rem;
-    opacity: 0.9;
+    opacity: 0.7;
   }
 }
 </style>

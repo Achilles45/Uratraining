@@ -117,7 +117,7 @@
     margin-bottom: 1.5rem;
     .header {
       background: #1e7b85;
-      padding: 1.5rem 2rem;
+      padding: 2.2rem 2rem;
       text-align: center;
       color: #fff;
       border-radius: 5px;

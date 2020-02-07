@@ -9,7 +9,7 @@
             world is the best. You are sure to walk away with the essential tips
             that are market proven on how to profitably trade the forex market
           </p>
-          <nuxt-link to="" class="hero__btn">Register Here</nuxt-link>
+          <nuxt-link to="/register" class="hero__btn">Register Here</nuxt-link>
         </div>
         <div class="col-md-6 img__holder">
           <img src="../assets/images/img1.jpg" class="banner__img" alt="" />
