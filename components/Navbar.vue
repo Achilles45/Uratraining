@@ -22,8 +22,8 @@
         </ul>
         <img
           src="../assets/images/menu.svg"
-          @click="alert('WORKING ...')"
           class="menu"
+          @click="toggleNav()"
           id="menu"
           alt=""
         />
@@ -33,9 +33,13 @@
 </template>
 <script>
 export default {
-  method: {
-    toggleNav: function() {
-      alert("Working");
+  methods: {
+    toggleNav() {
+      const navToggler = document.querySelector(".menu");
+      const nav = document.querySelector();
+      navToggler.addEventListener("click", () => {
+        navToggler.classList.toggle("toggle__nav");
+      });
     }
   }
 };
@@ -83,6 +87,9 @@ header {
       height: auto;
       display: none;
     }
+    .toggle__nav {
+      display: block !important;
+    }
   }
 }
 
@@ -98,14 +105,14 @@ header {
       width: 100%;
       height: 100vh;
       line-height: 4;
-      display: none !important;
+      opacity: 0;
       li a {
         color: #fff !important;
       }
     }
-    .menu {
-      display: block !important;
-    }
+    // .menu {
+    //   display: block !important;
+    // }
   }
 }
 </style>

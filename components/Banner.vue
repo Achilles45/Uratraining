@@ -34,6 +34,7 @@
       padding-bottom: 1.5rem;
       color: #404040;
       line-height: 1.8;
+      opacity: 0.8;
     }
     .hero__btn {
       background: #1e7b85;

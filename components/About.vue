@@ -74,7 +74,7 @@
     color: #2b2b2b;
     padding-top: 1rem;
     line-height: 1.8;
-    opacity: 0.9;
+    opacity: 0.8;
     font-size: 0.9rem;
   }
   .about__grid__container {

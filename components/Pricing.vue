@@ -114,7 +114,7 @@
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 1px 4px rgba(91, 99, 254, 0.2);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     .header {
       background: #1e7b85;
       padding: 2.2rem 2rem;
