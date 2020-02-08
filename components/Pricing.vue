@@ -20,7 +20,8 @@
             <div class="col-md-6">
               <div class="card__wrapper">
                 <div class="header">
-                  <h5>REGISTRATION</h5>
+                  <h5>5 DAYS TRAINING</h5>
+                  <small>1st - 5th March, 2020</small>
                   <h6>&#36; 115.00</h6>
                 </div>
                 <div class="content">
@@ -29,10 +30,11 @@
                       >You will learn the following among others</strong
                     ></small
                   ><br /><br />
-                  <p>Forex Trading Basics</p>
-                  <p>Advanced Concepts in Forex</p>
-                  <p>Fundamental Analysis</p>
-                  <p>Market proven winning strategies</p>
+                  <p>Introduction to FX Trading</p>
+                  <p>Setting up the trading application</p>
+                  <p>Candle stick analysis</p>
+                  <p>Confluence trading</p>
+                  <p>Psychology</p>
                   <p>Real time support in the course of the training</p>
                   <br />
                   <div class="button text-center">
@@ -117,7 +119,7 @@
     margin-bottom: 2rem;
     .header {
       background: #1e7b85;
-      padding: 2.2rem 2rem;
+      padding: 1.2rem 2rem;
       text-align: center;
       color: #fff;
       border-radius: 5px;

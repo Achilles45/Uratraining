@@ -13,7 +13,7 @@
         </div>
         <ul class="pt-2" id="list">
           <li @click="removeLink()">
-            <nuxt-link to="/" id="link">Home</nuxt-link>
+            <nuxt-link to="/">Home</nuxt-link>
           </li>
           <li><nuxt-link to="#about" id="link">About Us</nuxt-link></li>
           <li><nuxt-link to="/#pricing">See Our Pricing</nuxt-link></li>
@@ -42,14 +42,14 @@ export default {
       navToggler.addEventListener("click", () => {
         nav.classList.toggle("toggle__nav");
       });
-    },
-    removeLink() {
-      const link = document.querySelector("#link");
-      const nav = document.querySelector("#list");
-      link.addEventListener("click", () => {
-        nav.classList.remove();
-      });
     }
+    // removeLink() {
+    //   const link = document.querySelector("#link");
+    //   const nav = document.querySelector("#list");
+    //   link.addEventListener("click", () => {
+    //     nav.classList.remove();
+    //   });
+    // }
   }
 };
 </script>
@@ -102,6 +102,9 @@ header {
 .toggle__nav {
   display: block !important;
 }
+.hide__nav {
+  display: none !important;
+}
 //MEDIA QUERIES
 @media only screen and (max-width: 800px) {
   nav {
@@ -112,7 +115,7 @@ header {
       position: absolute;
       left: 0;
       top: 100%;
-      width: 100%;
+      width: 75%;
       height: 100vh;
       line-height: 4;
       display: none !important;
@@ -120,7 +123,7 @@ header {
       padding: 6rem 0 !important;
       li a {
         color: #fff !important;
-        margin: 4rem 3.5rem !important;
+        margin: 4rem 3rem !important;
         font-size: 0.9rem !important;
       }
     }

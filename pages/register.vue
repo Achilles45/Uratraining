@@ -2,7 +2,12 @@
   <section class="register">
     <div class="register__card">
       <div class="header text-center">
-        <h5>Register Here</h5>
+        <!-- <h5>Register Here</h5> -->
+        <img
+          src="../assets/images/logo.jpg"
+          class="logo img-fluid"
+          alt=""
+        /><br />
         <small
           >You are few clicks away from learning the skill that can change your
           fincances</small
@@ -11,15 +16,15 @@
       <form action="">
         <div class="form-group">
           <label for="full name">Name *</label>
-          <input type="text" class="form-control" v-model="first__name" />
+          <input type="text" class="form-control" v-model="name" />
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="Email">Email Address *</label>
           <input type="email" class="form-control" v-model="email" />
-        </div>
+        </div> -->
         <div class="form-group">
           <label for="phone">Phone Number *</label>
-          <input type="tel" v-model="phone__number" class="form-control" />
+          <input type="tel" v-model="phone" class="form-control" />
         </div>
         <div class="form-group">
           <label for="account-type">Account type *</label>
@@ -29,10 +34,10 @@
             <option value="Signals">Signals</option>
           </select>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="Password">Password *</label>
           <input type="password" class="form-control" v-model="password" />
-        </div>
+        </div> -->
         <button type="submit" class="sign__btn" name="submit">SIGN UP</button>
       </form>
     </div>
@@ -42,9 +47,8 @@
 export default {
   data() {
     return {
-      first__name: null,
-      email: null,
-      phone__number: null,
+      name: null,
+      phone: null,
       type: null
     };
   }
@@ -52,7 +56,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .register {
-  background: #f6f7ff;
+  background: #081d3c;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -67,6 +71,10 @@ export default {
     margin: 30px auto;
     .header {
       padding-top: 0.5rem;
+      .logo {
+        max-width: 70px;
+        height: auto;
+      }
       h5 {
         font-weight: bold;
         color: #2b2b2b;
@@ -77,6 +85,7 @@ export default {
         font-size: 0.7rem;
         opacity: 0.8;
         color: #2b2b2b;
+        padding-top: 1rem;
       }
     }
     form {
@@ -94,6 +103,9 @@ export default {
         font-size: 0.8rem;
         height: 2.5rem;
         border: 1px solid #ccc;
+        &:focus {
+          border: 1px solid #1e7b85;
+        }
       }
       .sign__btn {
         background: #1e7b85;
