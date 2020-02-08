@@ -12,7 +12,7 @@
           <nuxt-link to="/register" class="hero__btn">Register Here</nuxt-link>
         </div>
         <div class="col-md-6 img__holder">
-          <img src="../assets/images/img1.jpg" class="banner__img" alt="" />
+          <!-- <img src="../assets/images/m" class="banner__img" alt="" /> -->
         </div>
       </div>
     </div>
@@ -20,22 +20,28 @@
 </template>
 <style lang="scss" scoped>
 .banner {
-  padding-top: 13rem;
+  background: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.9)),
+    url("../assets/images/office.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 9.5rem 0;
   .text {
     h1 {
       font-weight: bold;
-      color: #2b2b2b;
+      color: #fff;
       text-transform: capitalize;
+      text-shadow: 0.03em 0.03em 0.05em rgba(0, 0, 0, 0.5);
       padding-bottom: 1.3rem;
       font-size: 2.6rem;
       line-height: 1.5;
-      padding-top: 2rem;
+      padding-top: 4rem;
     }
     p {
-      padding-bottom: 1.5rem;
-      color: #404040;
-      line-height: 1.8;
-      opacity: 0.8;
+      padding-bottom: 2.5rem;
+      color: #fff;
+      line-height: 2;
+      opacity: 0.6;
+      font-size: 0.9rem;
     }
     .hero__btn {
       background: #1e7b85;

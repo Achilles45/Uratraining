@@ -12,8 +12,10 @@
           </nuxt-link>
         </div>
         <ul class="pt-2" id="list">
-          <li><nuxt-link to="/">Home</nuxt-link></li>
-          <li><nuxt-link to="#about">About Us</nuxt-link></li>
+          <li @click="removeLink()">
+            <nuxt-link to="/" id="link">Home</nuxt-link>
+          </li>
+          <li><nuxt-link to="#about" id="link">About Us</nuxt-link></li>
           <li><nuxt-link to="/#pricing">See Our Pricing</nuxt-link></li>
           <li><nuxt-link to="/#contact">Contact Us</nuxt-link></li>
           <li>
@@ -39,6 +41,13 @@ export default {
       const nav = document.querySelector("#list");
       navToggler.addEventListener("click", () => {
         nav.classList.toggle("toggle__nav");
+      });
+    },
+    removeLink() {
+      const link = document.querySelector("#link");
+      const nav = document.querySelector("#list");
+      link.addEventListener("click", () => {
+        nav.classList.remove();
       });
     }
   }
@@ -99,6 +108,7 @@ header {
     ul {
       flex-direction: column !important;
       background: #000;
+
       position: absolute;
       left: 0;
       top: 100%;
@@ -106,11 +116,12 @@ header {
       height: 100vh;
       line-height: 4;
       display: none !important;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in;
+      padding: 6rem 0 !important;
       li a {
         color: #fff !important;
-        margin-left: 3rem !important;
-        margin-top: 10rem !important;
+        margin: 4rem 3.5rem !important;
+        font-size: 0.9rem !important;
       }
     }
     .menu {
