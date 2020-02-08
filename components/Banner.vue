@@ -29,6 +29,7 @@
       padding-bottom: 1.3rem;
       font-size: 2.6rem;
       line-height: 1.5;
+      padding-top: 2rem;
     }
     p {
       padding-bottom: 1.5rem;

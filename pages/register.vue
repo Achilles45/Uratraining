@@ -19,13 +19,7 @@
         </div>
         <div class="form-group">
           <label for="phone">Phone Number *</label>
-          <input
-            type="number"
-            v-model="phone__number"
-            class="form-control"
-            min="11"
-            max="11"
-          />
+          <input type="tel" v-model="phone__number" class="form-control" />
         </div>
         <div class="form-group">
           <label for="account-type">Account type *</label>

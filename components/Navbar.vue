@@ -11,7 +11,7 @@
             />
           </nuxt-link>
         </div>
-        <ul class="pt-2">
+        <ul class="pt-2" id="list">
           <li><nuxt-link to="/">Home</nuxt-link></li>
           <li><nuxt-link to="#about">About Us</nuxt-link></li>
           <li><nuxt-link to="/#pricing">See Our Pricing</nuxt-link></li>
@@ -35,10 +35,10 @@
 export default {
   methods: {
     toggleNav() {
-      const navToggler = document.querySelector(".menu");
-      const nav = document.querySelector();
+      const navToggler = document.querySelector("#menu");
+      const nav = document.querySelector("#list");
       navToggler.addEventListener("click", () => {
-        navToggler.classList.toggle("toggle__nav");
+        nav.classList.toggle("toggle__nav");
       });
     }
   }
@@ -86,13 +86,13 @@ header {
       max-width: 20px;
       height: auto;
       display: none;
-    }
-    .toggle__nav {
-      display: block !important;
+      cursor: pointer;
     }
   }
 }
-
+.toggle__nav {
+  display: block !important;
+}
 //MEDIA QUERIES
 @media only screen and (max-width: 800px) {
   nav {
@@ -105,14 +105,17 @@ header {
       width: 100%;
       height: 100vh;
       line-height: 4;
-      opacity: 0;
+      display: none !important;
+      transition: all 0.5s ease-in-out;
       li a {
         color: #fff !important;
+        margin-left: 3rem !important;
+        margin-top: 10rem !important;
       }
     }
-    // .menu {
-    //   display: block !important;
-    // }
+    .menu {
+      display: block !important;
+    }
   }
 }
 </style>
