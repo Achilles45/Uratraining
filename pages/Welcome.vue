@@ -3,7 +3,7 @@
     <div class="message text-center">
       <b-alert variant="success" show>
         <div class="content">
-          <h3>Hey Thank you for signing up today!</h3>
+          <h3>Hey! Thank you for signing up today!</h3>
           <hr />
           <br />
           <p>
@@ -14,8 +14,8 @@
             To continue, make payment into the bank either by transfer or
             Deposit and send an evidence of payment to the email address
             provided here <br /><br /><br />
-            Bank Name: First Bank Of Nigeria PLC <br /><br />
-            Account Number: 101010101010 <br /><br />
+            Bank Name: Zenith Bank Of Nigeria PLC <br /><br />
+            Account Number: 2281272439 <br /><br />
             Email Adress: uratrainingfx@gmail.com <br /><br />
           </p>
         </div>
@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
   .content {
-    padding: 3rem 2rem;
+    padding: 8rem 2rem;
     h3 {
       // padding-bottom: 2rem;
       text-transform: capitalize;

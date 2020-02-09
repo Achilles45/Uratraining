@@ -6,8 +6,9 @@
           <h1>Learn winning strategies in forex trading today</h1>
           <p>
             Learning to trade the biggest financial financial market in the
-            world is the best. You are sure to walk away with the essential tips
-            that are market proven on how to profitably trade the forex market
+            world is such a valuable skill. You are sure to walk away with the
+            essential tips that are market proven on how to profitably trade the
+            forex market
           </p>
           <nuxt-link to="/register" class="hero__btn">Register Here</nuxt-link>
         </div>
@@ -51,6 +52,10 @@
       text-decoration: none;
       font-size: 0.9rem;
       //   font-weight: bold;
+      &:hover {
+        background: #0b81b6;
+        transition: all ease-in-out 0.5s;
+      }
     }
   }
   .banner__img {

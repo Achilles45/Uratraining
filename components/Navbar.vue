@@ -12,7 +12,7 @@
           </nuxt-link>
         </div>
         <ul class="pt-2" id="list">
-          <li @click="removeLink()">
+          <li>
             <nuxt-link to="/">Home</nuxt-link>
           </li>
           <li><nuxt-link to="#about" id="link">About Us</nuxt-link></li>
@@ -82,6 +82,10 @@ header {
         color: #2d2d2d;
         text-transform: uppercase;
         font-weight: bolder !important;
+        &:hover {
+          color: #1e7b85;
+          transition: all ease-in-out 0.5s;
+        }
       }
       .register {
         background: #1e7b85;

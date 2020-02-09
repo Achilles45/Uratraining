@@ -35,7 +35,7 @@
           <div class="pt-2">
             <h6>Phone Number</h6>
             <p>
-              08123483755
+              +2349060245065
             </p>
           </div>
         </div>

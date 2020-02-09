@@ -10,7 +10,10 @@
       <div class="row">
         <div class="col-12 text-center heading">
           <h4>SEE OUR PRICING HERE</h4>
-          <p>You are one click away from acquiring a higly profitable skill</p>
+          <p>
+            You are one click away from acquiring a higly profitable trading
+            skill
+          </p>
         </div>
       </div>
       <div class="row pt-5">
@@ -148,6 +151,10 @@
         color: #fff;
         font-size: 0.8rem;
         text-decoration: none;
+        &:hover {
+          background: #0b81b6;
+          transition: all ease-in-out 0.5s;
+        }
       }
     }
   }
