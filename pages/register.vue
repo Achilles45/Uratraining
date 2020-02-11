@@ -30,10 +30,10 @@
             id="input"
           />
         </div>
-        <!-- <div class="form-group">
+        <div class="form-group">
           <label for="Email">Email Address *</label>
           <input type="email" class="form-control" v-model="email" />
-        </div> -->
+        </div>
         <div class="form-group">
           <label for="phone">Phone Number *</label>
           <input
@@ -72,6 +72,7 @@ export default {
     return {
       name: null,
       phone: null,
+      email:null,
       type: null,
       err: null,
       success: null
@@ -80,7 +81,7 @@ export default {
   methods: {
     submit() {
       const formInputs = document.getElementById("input");
-      if (!this.name || !this.phone || !this.type) {
+      if (!this.name || !this.phone || !this.type || !this.email) {
         this.showError();
         this.clearAlert();
       } else {
@@ -89,7 +90,8 @@ export default {
           .add({
             First_Name: this.name,
             Phone_Number: this.phone,
-            Account_Type: this.type
+            Account_Type: this.type,
+            Email: this.email
           })
           .then(() => {
             this.success = "Wait while your registration is processing ...";
