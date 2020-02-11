@@ -32,7 +32,7 @@
         </div>
         <div class="form-group">
           <label for="Email">Email Address *</label>
-          <input type="email" class="form-control" v-model="email" />
+          <input type="email" class="form-control" placeholder="Enter a valid email address" v-model="email" />
         </div>
         <div class="form-group">
           <label for="phone">Phone Number *</label>
