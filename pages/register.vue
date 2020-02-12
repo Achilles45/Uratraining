@@ -97,7 +97,7 @@ export default {
             this.success = "Wait while your registration is processing ...";
             setTimeout(() => {
               this.$router.push({ path: "welcome" });
-            }, 1000);
+            }, 500);
           })
           .catch(err => {
             console.log(err);
